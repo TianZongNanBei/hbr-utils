@@ -1,6 +1,6 @@
 {
   "name": "hbr-utils",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Utility functions",
   "main": "./dist/index.js",
   "bin": {
@@ -8,10 +8,12 @@
   },
   "scripts": {
     "test": "vitest",
+    "test:run": "vitest run",
     "bumpp": "bumpp",
     "build": "tsup",
-    "build:bumpp": "npm run build && bumpp",
-    "build:publish": "npm run build && bumpp && npm publish"
+    "test:build": "npm run test:run && npm run build",
+    "build:bumpp": "npm run test:build && bumpp",
+    "build:publish": "npm run build:bumpp && npm publish"
   },
   "files": [
     "bin",
