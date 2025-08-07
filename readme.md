@@ -4,7 +4,8 @@
 
 hbr-utils 是一个轻量级的 JavaScript/TypeScript 工具函数库，提供常用的工具函数，帮助开发者更高效地编写代码。该库使用 TypeScript 编写，具有完整的类型定义支持。
 
-[掘金链接-编写-测试-发布-更新 npm 包详细教程](https://juejin.cn/spost/7535423307547967498)
+[掘金链接:编写-测试-发布-更新 npm 包详细教程](https://juejin.cn/spost/7535423307547967498)
+
 [github 仓库地址](https://github.com/TianZongNanBei/hbr-utils)
 
 ## 安装
