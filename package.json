@@ -1,0 +1,48 @@
+{
+  "name": "hbr-utils",
+  "version": "1.0.0",
+  "description": "Utility functions",
+  "main": "./dist/index.js",
+  "bin": {
+    "hello": "bin/hello.js"
+  },
+  "scripts": {
+    "test": "vitest",
+    "bumpp": "bumpp",
+    "build": "tsup",
+    "build:bumpp": "npm run build && bumpp",
+    "build:publish": "npm run build && bumpp && npm publish"
+  },
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TianZongNanBei/hbr-utils.git"
+  },
+  "keywords": [
+    "string",
+    "array",
+    "typescript",
+    "utils"
+  ],
+  "author": "TianZongNanBei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TianZongNanBei/hbr-utils/issues"
+  },
+  "homepage": "https://github.com/TianZongNanBei/hbr-utils#readme",
+  "devDependencies": {
+    "bumpp": "^10.2.2",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}
