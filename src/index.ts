@@ -1,2 +1,2 @@
-export * from './mathUtils.ts'
-export * from './stringUtils.ts'
+export * from './mathUtils'
+export * from './stringUtils'
